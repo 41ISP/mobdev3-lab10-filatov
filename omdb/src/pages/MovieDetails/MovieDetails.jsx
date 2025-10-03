@@ -27,7 +27,7 @@ const MovieDetails = () => {
         <div className="container">
             <Link to="/" className="back-button">← Back to Search</Link>
 
-            <div className="movie-detail-card">
+           {movieDetails && <div className="movie-detail-card">
                 <div className="movie-header">
                     <div className="poster-section">
                         <img
@@ -147,6 +147,7 @@ const MovieDetails = () => {
                     </div>
                 </div>
             </div>
+            }
         </div>
 
     )
